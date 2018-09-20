@@ -16,8 +16,27 @@
 		src: url('https://www.sfdcstatic.com/system/shared/common/assets/fonts/SalesforceSans/SalesforceSans-Regular.woff') format('woff'),
 		url('https://www.sfdcstatic.com/system/shared/common/assets/fonts/SalesforceSans/SalesforceSans-Regular.ttf') format('truetype');
 	}
-</style>
+	#backgroundImage{z-index: 1;}
 
+#backgroundImage:before {
+   content: "";
+   position: absolute;
+   z-index: -1;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background-image: url(https://omniskills2018.github.io/support.png);
+    background-repeat: no-repeat;
+    background-size: 55%;
+    opacity: 0.8;
+    filter:alpha(opacity=10);
+    height:100%;
+    width:100%;
+ }
+</style>
+<div id="backgroundImage">
+	</div>
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 <script type='text/javascript'>
 	var initESW = function(gslbBaseURL) {
