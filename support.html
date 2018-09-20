@@ -1,10 +1,54 @@
+
+<!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-</head>
-<body>
-<style type='text/css'>
-	.embeddedServiceHelpButton .helpButton .uiButton {
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.85;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("https://omniskills2018.github.io/camera.png");
+  height: 50%;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+.embeddedServiceHelpButton .helpButton .uiButton {
 		background-color: #005290;
 		font-family: "Salesforce Sans", sans-serif;
 	}
@@ -17,26 +61,43 @@
 		url('https://www.sfdcstatic.com/system/shared/common/assets/fonts/SalesforceSans/SalesforceSans-Regular.ttf') format('truetype');
 	}
 	#backgroundImage{z-index: 1;}
-
-#backgroundImage:before {
-   content: "";
-   position: absolute;
-   z-index: -1;
-   top: 0;
-   bottom: 0;
-   left: 0;
-   right: 0;
-   background-image: url(https://omniskills2018.github.io/support.png);
-    background-repeat: no-repeat;
-    background-size: 55%;
-    opacity: 0.8;
-    filter:alpha(opacity=10);
-    height:100%;
-    width:100%;
- }
 </style>
-<div id="backgroundImage">
-	</div>
+</head>
+<body style="font-family: 'Arimo', sans-serif;">
+
+<div class="bgimg-1">
+  <div class="caption">
+    <span class="border">CONTACT US</span><br>
+
+  </div>
+</div>
+<div style="padding:30px 15px 5px 25px ">
+	<p style="line-height: 1.5em">
+		<b><span>Mailing address:</span></b>
+	</p>
+	<p style="line-height: 1.2em">
+		<span>500 New Street</span>
+	</p>
+	<p style="line-height: 1.2em">
+		<span>San Francisco, CA 94105</span>
+	</p>
+</div>
+<div style="padding:0px 15px 5px 25px ">
+	<p style="line-height: 1.5em">
+		<b><span>Call us:</span></b>
+	</p>
+	<p style="line-height: 1.2em">
+		<span>Tel: 1-800-123-4444</span>
+	</p>
+</div>
+<div style="padding:0px 15px 5px 25px ">
+	<p style="line-height: 1.5em">
+		<b><span>Or email us at:</span></b>
+	</p>
+	<p style="line-height: 1.2em">
+		<span>support@site.com</span>
+	</p>
+</div>
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 <script type='text/javascript'>
 	var initESW = function(gslbBaseURL) {
@@ -89,5 +150,6 @@
 		initESW('https://service.force.com');
 	}
 </script>
+
 </body>
 </html>
